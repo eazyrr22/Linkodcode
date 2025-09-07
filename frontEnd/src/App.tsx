@@ -1,12 +1,15 @@
 import React from "react";
-import Post from "./components/PostCard";
+import PostCard from "./components/PostCard";
 import PostsPage from "./pages/PostsPage";
+import * as jsonData from "./posts/posts.json";
+
+
+
 
 export default function App() {
   return (
     <div>
-      <PostsPage filePath=""></PostsPage>
-      <Post />
+      <PostsPage data = {jsonData}/>
     </div>
   );
 }

@@ -1,20 +1,21 @@
 import React from "react";
-import Post from "../components/PostCard";
-import { posts } from "../posts/posts.json";
+import PostCard from "../components/PostCard";
+import type { Post } from "../itemType";
 
-export default function PostsPage(filePath: string) {
-  const postsList: string = JSON.stringify(posts);
-  const formatedPosts: object[] = JSON.parse(postsList);
-  const postsPage = formatedPosts.map((post: Post) => {
-    return (
+export default function PostsPage(data:JSON) {
+  
+  const formatedData:Post[]= JSON.parse(data) // TODO : import and convert json data to Post obj
+
+  const postsPage = formatedData.map((post: Post) => {
+    
       <li>
-        <Post imgUrl={} description={} authorName={} datePublish={}></Post>
+        <PostCard imgUrl={post.imgUrl} description={post.description} authorName={post.authorName}></PostCard>
       </li>
-    );
-  });
+    
+})
 
   return (
-    <div>
+    <div> 
       <ul>{postsPage}</ul>
     </div>
   );
