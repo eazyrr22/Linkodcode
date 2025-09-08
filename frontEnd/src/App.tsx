@@ -1,12 +1,15 @@
 import React from "react";
-import PostsPage from "./pages/PostsPage";
-import jsonData from "./posts/posts.json";
+import MainContent from "./components/application-layout/MainContent"
+import Slogen from "./components/application-layout/Slogen";
 import type { Post } from "./itemType";
 
 export default function App() {
   return (
     <div>
-      <PostsPage data={jsonData} />
+      <Slogen/>
+      <MainContent/>
+      
+      
     </div>
   );
 }
