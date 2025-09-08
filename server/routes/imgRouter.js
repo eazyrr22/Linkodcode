@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { getImg } from '../controllers/imgController.js';
+import { getImgById } from '../controllers/imgController.js';
 
 const router = Router();
 
-router.get('/:id', getImg)
+router.get('/:id', getImgById)
 
 
 export default router;
