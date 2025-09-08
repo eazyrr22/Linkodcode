@@ -1,0 +1,8 @@
+#slogen-layout{
+    height: 15%vh;
+    width: 100%;
+    display:inline;
+    padding-block-start: 5%;
+    background-color: rgb(255, 230, 0);
+    text-align: center; 
+}
