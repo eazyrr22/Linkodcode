@@ -1,3 +1,6 @@
 #logo-container{
-
+width: 15%;
+height: 100%;
+background-color: rgb(127, 255, 214);
+border-radius:25%;
 }

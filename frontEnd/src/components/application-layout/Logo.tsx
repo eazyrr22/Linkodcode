@@ -1,4 +1,5 @@
 import React from 'react'
+import "frontEnd/src/css/logo.css"
 
 export default function Logo() {
   return (
