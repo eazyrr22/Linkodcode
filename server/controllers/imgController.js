@@ -1,4 +1,4 @@
-import { getImg } from "../services/imgService";
+import { getImg } from "../services/imgService.js";
 
 
 export async function getImgById(req, res) {
