@@ -1,12 +1,19 @@
-import React from "react";
-import jsonData from "/Users/עזריאל/source/repos/Linkodcode web/frontEnd/src/posts/posts.json";
-import "frontEnd/src/css/mainContent.css";
+import React, { useEffect, useState } from "react";
+import "./css/mainContent.css";
 import PostsPage from "../../pages/PostsPage";
 
 export default function MainContent() {
+  const [postData, setPostData] = useState([]);
+
+  useEffect(() => {
+        fetch("http://localhost/server/db/posts.json")
+            .then(response => response.json())
+            .then(data => setPostData(data));
+    }, []);
+  
   return (
     <main>
-      <PostsPage data={jsonData} />
+      <PostsPage data={postData} />
     </main>
   );
 }
