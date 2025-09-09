@@ -4,7 +4,6 @@ import type { Post } from "../itemType";
 
 export default function PostsPage({data}:any) {           // set the data type   
   const jsonData: Post[] = data;
-  console.log(typeof jsonData);
   return (
     <div>
       <ul>
