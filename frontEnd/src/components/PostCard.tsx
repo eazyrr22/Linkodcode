@@ -1,27 +1,22 @@
 import React from "react";
 import "../css/post-style.css";
-import type {Post}  from "../itemType";
+import type { Post } from "../itemType";
 
-export default function PostCard(post:Post) {
-
+export default function PostCard(post: Post) {
   return (
     <div className="post-card">
-      <div>
-        <h2>Card Title</h2>
-        <div className="post-head">
-          <div className="post-head-item">
-            <img src={post.imgUrl} alt="post img" />
-            <h3 className="">{post.authorName}</h3>
-          </div>
-          <div className="post-head-item">
-            <img src="src/assets/like-icon.png" alt="" />
-            <h4>{Date().toString()}</h4>
-          </div>
+      <h2>Card Title</h2>
+      <div className="post-head">
+        <div className="post-head-item">
+          <img src={post.imgUrl} alt="post img" />
+          <h3 className="">{post.authorName}</h3>
         </div>
-        <p className="post-main-article">
-          {post.description}
-        </p>
+        <div className="post-head-item">
+          <img src="src/assets/like-icon.png" alt="" />
+          <h4>{Date().toString()}</h4>
+        </div>
       </div>
+      <p className="post-main-article">post description{post.description}</p>
     </div>
   );
 }

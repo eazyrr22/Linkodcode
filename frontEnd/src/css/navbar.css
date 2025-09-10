@@ -1,0 +1,11 @@
+#navbar{
+    display: inline;
+    position: relative;
+    left: 10%;
+    
+
+}
+
+.navbar-links{
+    padding-right: 10px;
+}

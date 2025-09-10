@@ -1,12 +1,22 @@
-import React from 'react'
-import Logo from './Logo'
+
+
+
 import "../../css/slogen.css"
+
+
+import Logo from "./Logo";
+import "../../css/logo.css";
+import Navbar from "./navbar";
+
 
 export default function Slogen() {
   return (
-    <div id='slogen-layout'>
-        <Logo/>
-        <h1 id='web-title'>Linkodcode</h1>
+    <div id="slogen-layout">
+      <div id="slogen-top">
+        <Logo />
+        <h1 id="web-title">Linkodcode</h1>
+      </div>
+      <Navbar/>
     </div>
-  )
+  );
 }
