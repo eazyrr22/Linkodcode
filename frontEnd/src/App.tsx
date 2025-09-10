@@ -1,19 +1,18 @@
 import React from "react";
-import MainContent from "./components/application-layout/MainContent"
 import Slogen from "./components/application-layout/Slogen";
 import type { Post } from "./itemType";
 import { Routes,Route } from 'react-router'
+import HomePage from "./pages/HomePage";
+import Posts from "./pages/Posts";
 
 
 export default function App() {
   return (
     <>
      <Routes>
-        {/* <Route path='/' element={<Home/>}></Route> */}
-        {/* <Route path='/posts' element={<Posts/>}></Route> */}
+        <Route path='/Home' element={<HomePage/>}></Route>
+        <Route path='/posts' element={<Posts/>}></Route>
       </Routes>
-      <Slogen/>
-      <MainContent/>
       
       
     </>

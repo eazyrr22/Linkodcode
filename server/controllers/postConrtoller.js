@@ -12,7 +12,7 @@ export function getAllPosts(req, res) {
 }
 export async function getPostById(req, res) {
     try {
-        const postId = req.params.id
+        const postId = req.params.postId;
         const post = getPost(postId);
         if(!post){
         res.status(204).json({message:"post not found"});    
