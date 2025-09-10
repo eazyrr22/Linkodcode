@@ -1,11 +1,13 @@
-#navbar{
-    display: inline;
-    position: relative;
-    left: 10%;
-    
-
+#navbar {
+  display: inline;
+  position: relative;
+  left: 10%;
 }
 
-.navbar-links{
-    padding-right: 10px;
+.navbar-links {
+  padding-right: 10px;
+  background-color: rgba(48, 97, 139, 0.608);
+  border-radius: 2px;
+  color: rgb(15, 10, 103);
+  text-decoration: none;
 }
