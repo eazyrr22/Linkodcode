@@ -1,6 +1,18 @@
-#logo-container{
-width: 15%;
-height: 100%;
-background-color: rgb(127, 255, 214);
-border-radius:25%;
+#logo-container {
+  display: inline;
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-radius: 25%;
+}
+img {
+  height: auto;
+  width: auto;
+}
+#web-title {
+  position: relative;
+  padding-left: 45%;
+  top: 10%;
+
+  text-align: center;
 }
