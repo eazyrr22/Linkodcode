@@ -1,5 +1,6 @@
 import React from 'react'
-import "C:/Users/עזריאל/source/repos/Linkodcode web/frontEnd/src/css/logo.css"
+import "../../css/logo.css"
+
 
 export default function Logo() {
   return (
