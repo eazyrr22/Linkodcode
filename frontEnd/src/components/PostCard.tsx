@@ -11,11 +11,11 @@ export default function PostCard(post: Post) {
           <h3 className="">{post.authorName}</h3>
         </div>
         <div className="post-head-item-right">
-          <img src="src/assets/like-icon.png" alt="" />
+          <img src="src/assets/like-icon.png" alt="like icon" />
           <h4>{new Date().toLocaleDateString()}</h4>
         </div>
       </div>
-      <p className="post-main-article">post description{post.description}</p>
+      <p className="post-main-article">{post.description}</p>
     </div>
   );
 }
