@@ -1,10 +1,10 @@
 import {getAllData} from '../services/postService.js'
 
 
-export async function getAllPosts(req, res) {
+export function getAllPosts(req, res) {
     try {
-        const PostsArray = await getAllData()
-        res.status(200).json({ "posts": PostsArray });
+        const data = getAllData();
+        res.status(200).json( data );
     }
     catch (err) {
         res.status(500).json({ "error": `get posts request failed: \n ${err}` });

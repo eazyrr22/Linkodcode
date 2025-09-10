@@ -1,21 +1,22 @@
-import React, { type JSX } from "react";
 import PostCard from "../components/PostCard";
 import type { Post } from "../itemType";
+import { useId } from "react";
 
-export default function PostsPage({data}:any) {           // set the data type   
-  const jsonData: Post[] = data;
+export default function PostsPage({ data }:Post[]) {       // set the data type
+  
   return (
     <div>
       <ul>
-        {jsonData.map((post: Post) => (           // TODO : fix the map loop issue
-          <li>
-            <PostCard
-              imgUrl={post.imgUrl}
-              description={post.description}
-              authorName={post.authorName}
-            ></PostCard>
-          </li>
-        ))}
+        {[data].map((post: Post) => (
+            <li key={useId()}>
+              <PostCard
+                imgUrl={post.imgUrl}
+                description={post.description}
+                authorName={post.authorName}
+              ></PostCard>
+            </li>
+          )
+        )}
       </ul>
     </div>
   );
