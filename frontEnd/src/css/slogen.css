@@ -1,8 +1,15 @@
-#slogen-layout{
-    height: 15%vh;
-    width: 100%;
-    display:inline;
-    padding-block-start: 5%;
-    background-color: rgb(255, 230, 0);
-    text-align: center; 
+#slogen-layout {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(138 0 255)
+}
+
+
+div #slogen-top {
+  display: flex;
+  align-items: center;
+  justify-content:  space-between;
+
 }
