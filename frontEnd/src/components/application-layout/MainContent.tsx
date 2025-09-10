@@ -7,7 +7,7 @@ export default function MainContent() {
   const [postData, setPostData] = useState<Post[]>([]);
 
   useEffect(() => {
-        fetch("http://localhost:3000/post?id=1")
+        fetch("http://localhost:3000/post")
             .then(data => data.json())
             .then(posts => setPostData(posts))
             .catch(err=>{console.log({err:`get posts from server failed: ${err.message}`})})
