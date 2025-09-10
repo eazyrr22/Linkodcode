@@ -1,8 +1,18 @@
 import { response } from "express";
-import data from "../db/posts.json" with { type: "json" };
-
+import posts from "../db/posts.json" with { type: "json" };
 
 
 export function getAllData() {
-    return data;
+    return posts;
+}
+
+export function getPost(id) {
+    const data = posts;
+    let foundPost;
+    for (const post of data) {
+        if (post.id == id) {
+            foundPost = post
+        };
+    }
+    return foundPost;
 }
