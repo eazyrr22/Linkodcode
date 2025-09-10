@@ -4,6 +4,7 @@ import type { Post } from "./itemType";
 import { Routes,Route } from 'react-router'
 import HomePage from "./pages/HomePage";
 import Posts from "./pages/Posts";
+import Login from "./pages/Login";
 
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
      <Routes>
         <Route path='/Home' element={<HomePage/>}></Route>
         <Route path='/posts' element={<Posts/>}></Route>
+        <Route path='/Login' element={<Login/>}></Route>
       </Routes>
       
       
