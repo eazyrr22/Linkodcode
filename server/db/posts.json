@@ -1,4 +1,4 @@
-[
+{"posts":[
   {
     "imgUrl": "src/assets/user-profile.png",
     "description": "post description example",
@@ -9,4 +9,4 @@
     "description": "like icon",
     "authorName": "eazy"
   }
-]
+]}

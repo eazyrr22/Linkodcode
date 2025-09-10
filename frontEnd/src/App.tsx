@@ -5,11 +5,11 @@ import type { Post } from "./itemType";
 
 export default function App() {
   return (
-    <div>
+    <>
       <Slogen/>
       <MainContent/>
       
       
-    </div>
+    </>
   );
 }
