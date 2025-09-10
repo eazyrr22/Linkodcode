@@ -1,12 +1,14 @@
-{"posts":[
-  {
-    "imgUrl": "src/assets/user-profile.png",
-    "description": "post description example",
-    "authorName": "eazy"
-  },
-  {
-    "imgUrl": "src/assets/like-icon.png",
-    "description": "like icon",
-    "authorName": "eazy"
-  }
-]}
+
+  [
+    {
+      "imgUrl": "src/assets/user-profile.png",
+      "description": "post description example",
+      "authorName": "eazy"
+    },
+    {
+      "imgUrl": "src/assets/like-icon.png",
+      "description": "like icon",
+      "authorName": "eazy"
+    }
+  ]
+
